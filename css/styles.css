@@ -1,0 +1,117 @@
+/**************************** TAGS   ****************************/
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+/**************************** sections  ****************************/
+
+
+/**************************** CLASSES  ****************************/
+.container-fluid {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Title_name {
+  margin-left: 15%;
+  margin-top: 17rem;
+  margin-top: 10%;
+  height: 100%;
+}
+
+.Name {
+  color: white;
+  font-size: 7rem;
+}
+
+.Phd_studet{
+    color: #F5AE0A;
+    font-size: 3rem;
+    margin-left: 5%;
+}
+.under_title{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.first_description_line{
+  color: white;
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+.second_description_line{
+  color: #F5AE0A;
+
+  margin-left: 15%;
+  font-size: 2rem;
+}
+.third_description_line{
+  color: white;
+
+  margin-left: 25%;
+  font-size: 1.5rem;
+}
+
+.btn_custom{
+  margin-left: 40%;
+  margin-top: 15%;
+}
+
+
+
+/**************************** NavBAr  ****************************/
+.fa_custom {
+color: #F5AE0A;
+}
+.vertical-nav {
+  min-width: 17rem;
+  background-color: #F5F5F5;
+  opacity: 0.5;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+
+}
